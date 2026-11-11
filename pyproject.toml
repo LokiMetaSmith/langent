@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langent"
+version = "0.3.0"
+description = "Wireless language out of entropy - file similarity and transmission simulation toolkit."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GPL-3.0" }
+authors = [
+    { name = "LokiMetaSmith" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: System :: Archiving :: Compression"
+]
+
+[project.scripts]
+langent = "test_file_similarity:main"
+
+[tool.setuptools]
+py-modules = ["test_file_similarity", "simulation", "xor_stream", "protocol", "cdc"]
